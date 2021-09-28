@@ -1,6 +1,4 @@
-# group-16
-
-# DSBA 6162 KDD Project
+# group-16 for DSBA 6162 KDD Project
 
 William (Billy) Edwards 
 Samihan Jawalkar
