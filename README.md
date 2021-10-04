@@ -14,3 +14,9 @@ The hope of this study aims to see if the spread of the disease is related to cl
 
 ## Research Question
 The goal of this project is to predict the total cases for each (city, year, and weekofyear) in the test set, and the project will be evaluated using the mean absolute error. There will be predictions for both the city of San Juan and Iquitos. Our group plans to use several types of analyses to help predict the total cases such as linear regression, random forests, and potentially neural networks. The linear regression will give us a baseline to estimate on using the more advanced models like random forest.
+
+
+## Future Plan
+1. Iteratively include latest data into dataset from different sources.
+2. Planning to add some new feature which can make dataset more reliable. For instance, pollution level, environmental elements, etc.
+3. Expand the study further to compare the spread of predicted total cases in the United States.  
