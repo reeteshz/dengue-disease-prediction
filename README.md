@@ -11,6 +11,9 @@ Dengue is a viral disease that is transmitted by mosquitoes in tropical areas th
 
 The hope of this study aims to see if the spread of the disease is related to climate variables such as temperature, precipitation and humidity, and to see if steps can be taken to reduce the impact of Dengue and reduce future epidemics. Data has been collected from multiple sources to perform this study such as: US Federal Government agencies (like the Centers for Disease Control and Prevention and the National Oceanic and Atmospheric Administration), US Department of Commerce, and US universities.
 
+## Data Resources
+https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/page/81/
+https://obamawhitehouse.archives.gov/blog/2015/06/05/back-future-using-historical-dengue-data-predict-next-epidemic
 
 ## Research Question
 The goal of this project is to predict the total cases for each (city, year, and weekofyear) in the test set, and the project will be evaluated using the mean absolute error. There will be predictions for both the city of San Juan and Iquitos. Our group plans to use several types of analyses to help predict the total cases such as linear regression, random forests, and potentially neural networks. The linear regression will give us a baseline to estimate on using the more advanced models like random forest.
