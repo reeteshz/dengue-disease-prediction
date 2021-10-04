@@ -17,6 +17,9 @@ https://obamawhitehouse.archives.gov/blog/2015/06/05/back-future-using-historica
 
 ## Research Question
 The goal of this project is to predict the total cases for each (city, year, and weekofyear) in the test set, and the project will be evaluated using the mean absolute error. There will be predictions for both the city of San Juan and Iquitos. Our group plans to use several types of analyses to help predict the total cases such as linear regression, random forests, and potentially neural networks. The linear regression will give us a baseline to estimate on using the more advanced models like random forest.
+### Exploratory Data Analysis Questions
+- How have average air temperature and total precipitation changed over time?
+- How does total cases correlate with mean dew point temperature?
 
 
 ## Future Plan
