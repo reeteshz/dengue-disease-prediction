@@ -20,6 +20,8 @@ The goal of this project is to predict the total cases for each (city, year, and
 ### Exploratory Data Analysis Questions
 - How have average air temperature and total precipitation changed over time?
 - How does total cases correlate with mean dew point temperature?
+- How does humidity level correlate with total cases?
+- Does Vegitation Index has any role in disease spread?
 
 
 ## Future Plan
