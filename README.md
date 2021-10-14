@@ -11,6 +11,10 @@ Dengue is a viral disease that is transmitted by mosquitoes in tropical areas th
 
 The hope of this study aims to see if the spread of the disease is related to climate variables such as temperature, precipitation and humidity, and to see if steps can be taken to reduce the impact of Dengue and reduce future epidemics. Data has been collected from multiple sources to perform this study such as: US Federal Government agencies (like the Centers for Disease Control and Prevention and the National Oceanic and Atmospheric Administration), US Department of Commerce, and US universities.
 
+## Domain Exploration and Resources
+https://www.sciencedirect.com/science/article/pii/S0140673614605729?casa_token=4KzqW99aHm0AAAAA:Fd3Pk9W4rZLvaddr2m5bZwAUiLB_ck78mNn7PL31etzz8I3yb0YycbXVh8aiqnTm07OGofVt2fo
+https://www.nejm.org/doi/full/10.1056/nejmra1110265
+
 ## Data Resources
 https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/page/81/
 https://obamawhitehouse.archives.gov/blog/2015/06/05/back-future-using-historical-dengue-data-predict-next-epidemic
