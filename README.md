@@ -28,7 +28,7 @@ The goal of this project is to see if humidity, precipitation, and vegetation in
 - Does Vegitation Index has any role in disease spread?
 
 ## Dataset
-The features in this dataset
+The features in this dataset - dengue_features_train.csv:
 
 We are provided the following set of information on a (year, weekofyear) timescale:
 
