@@ -83,6 +83,20 @@ Satellite vegetation - Normalized difference vegetation index (NDVI) - NOAA's CD
 10. Put new standardized variables in trans_df dataframe
 11. Plot new bow plot matrix to observe any remaining outliers from the standardized variables
 
+## Exploratory Data Analysis:
+1. Create a correlation matrix of the new dataframe to observe multicollinearity
+2. Add a heat map of the correlation matrix to see the correlation visually
+3. Make a scatter plot matrix to observe trends in the data
+4. Create a histogram matrix to look at the distributions, and note any that might need to be later transformed after running a regression
+5. Create a mask variable that will hide any features that do not have any correlation coefficient with less than 0.90
+6. Apply this mask to the dataframe to see which variables have the most multicollinearity
+7. Create a new dataframe "X_clean" that has the variables with multicollinearity above 0.90 dropped from it
+8. Run sweetviz package to see association chart
+9. Use RandomForestClassifier to see the features that will be most important to keep when running a regression in the next stage
+10. Marked a threshold of 0.045 and less to remove least important features in the futures
+11. Make hierarchical cluster of each remaining variable to spot relationships, and visualize variable importance
+12. Generate second hierarchical cluster to see variable relationships after removing variables that had correlation coefficients with values less than 0.90
+
 ## Future Plan
 1. Iteratively include latest data into dataset from different sources.
 2. Planning to add some new feature which can make dataset more reliable. For instance, pollution level, environmental elements, etc.
