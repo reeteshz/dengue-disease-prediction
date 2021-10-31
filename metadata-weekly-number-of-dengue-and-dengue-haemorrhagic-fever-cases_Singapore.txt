@@ -1,0 +1,58 @@
+# Metadata for Weekly Number of Dengue and Dengue Haemorrhagic Fever Cases
+---
+Identifier: 'f4c6643f-5b70-406e-a631-1f96e0b90712'
+Name: 'weekly-number-of-dengue-and-dengue-haemorrhagic-fever-cases'
+Title: 'Weekly Number of Dengue and Dengue Haemorrhagic Fever Cases'
+Description: 'This table gives the weekly number of lab-confirmed dengue and dengue
+  haemorrhagic fever cases from 2014 to 2018.'
+Topics:
+  - 'Health'
+Keywords:
+  - 'Dengue'
+  - 'Haemorrhagic'
+  - 'dengue haemorrhagic fever'
+Publisher:
+  Name: 'Ministry of Health'
+  Admin 1:
+    Name: 'Charlene Tow'
+    Department: 'QSM'
+    Email: 'MOH_QSM@moh.gov.sg'
+Sources:
+  - 'Ministry of Health'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Weekly'
+Coverage: '2014-01-01 to 2018-12-31'
+Last Updated: '2019-09-30T02:33:53.627712'
+Resources:
+  -
+    Identifier: 'c6db5eb2-6daf-4d3b-b571-7bc16c8f03c4'
+    Title: 'Weekly Number of Dengue and Dengue Haemorrhagic Fever Cases'
+    Url: 'https://storage.data.gov.sg/weekly-number-of-dengue-and-dengue-haemorrhagic-fever-cases/resources/weekly-number-of-dengue-and-dengue-haemorrhagic-fever-cases-2019-09-30T02-33-51Z.csv'
+    Format: 'CSV'
+    Coverage: '2014-01-01 to 2018-12-31'
+    Description: 'This table gives the weekly number of lab-confirmed dengue and dengue
+      haemorrhagic fever cases from 2014 to 2018.'
+    Last Updated: '2019-09-30T02:33:51.611480'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'eweek'
+        Title: 'Eweek'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Week'
+      -
+        Name: 'type_dengue'
+        Title: 'Type dengue'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'number'
+        Title: 'Number'
+        Type: 'text'
+        Sub Type: 'general'
