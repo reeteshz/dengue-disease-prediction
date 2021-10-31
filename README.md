@@ -70,6 +70,18 @@ Satellite vegetation - Normalized difference vegetation index (NDVI) - NOAA's CD
     ndvi_ne – Pixel northeast of city centroid
     ndvi_nw – Pixel northwest of city centroid
 
+## Data Preparation/Preprocessing:
+1. Importing train data set into jupyter notebook
+2. Explore the datatypes and statistical information of the csv
+3. Check for percentage of null vales
+4. For any missing data that has less than 50% impute the data 
+5. Impute based on the median value since most of the data has outliers. Imputing on the mean would skew the data by including the outliers
+6. Convert "city" into a categorical variable using label encoder
+7. Create a box plot matrix to look at outliers of each numerical variable
+8. Drop outliers on variables that have 7 or less outliers 
+9. Standardize the variables with outliers using StandardScaler to put them in the same range of values 
+10. Put new standardized variables in trans_df dataframe
+11. Plot new bow plot matrix to observe any remaining outliers from the standardized variables
 
 ## Future Plan
 1. Iteratively include latest data into dataset from different sources.
