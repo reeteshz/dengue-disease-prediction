@@ -103,8 +103,9 @@ The random forest model lists the feature importance for each remaining varaible
 
 10. Marked a threshold of 0.045 and less to remove least important features in the futures
 11. Make hierarchical cluster of each remaining variable to spot relationships, and visualize variable importance
-
 ![](images/Dendrogram.png)
+
+The dendrogram above gives a visual on each feature, and depicts clustering relationship based on how related they are to other features. We can view the correlation of the variables and see that variable such as "ndvi" and its directions are all quite correlated with two clusters next to each other. After running a prediction model, only one may need to be kept to best model a case of dengue.
 
 12. Generate second hierarchical cluster to see variable relationships after removing variables that had correlation coefficients with values less than 0.90
 
