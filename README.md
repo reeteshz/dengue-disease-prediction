@@ -87,6 +87,7 @@ Satellite vegetation - Normalized difference vegetation index (NDVI) - NOAA's CD
 1. Create a correlation matrix of the new dataframe to observe multicollinearity
 2. Add a heat map of the correlation matrix to see the correlation visually
 ![](images/Heatmap.png)
+The lighter the color, the more positively correlated it is with a variable and vice-versa. This map makes it easier to spot multicollinearity. Here, there are many variables that might influence one another. For example, the satellite vegetation indices "ndvi" all seem to influence each other somewhat. The southeast centroid is 0.82 correlated with the southwest centroid. It may be best to keep only one southeast centroid. After running a regression and looking at VIF scores to confirm their influence on each other, one can be dropped from the model.
 3. Make a scatter plot matrix to observe trends in the data
 4. Create a histogram matrix to look at the distributions, and note any that might need to be later transformed after running a regression
 5. Create a mask variable that will hide any features that do not have any correlation coefficient with less than 0.90
