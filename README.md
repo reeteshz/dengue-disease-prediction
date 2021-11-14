@@ -97,8 +97,9 @@ The lighter the color, the more positively correlated it is with a variable and 
 7. Create a new dataframe "X_clean" that has the variables with multicollinearity above 0.90 dropped from it
 8. Run sweetviz package to see association chart
 9. Use RandomForestClassifier to see the features that will be most important to keep when running a regression in the next stage
-
 ![](images/Randomforest.png)
+
+The random forest model lists the feature importance for each remaining varaible in the data set in descending order. "Weekofyear" is shown as the best overall feature. When running our regression prediction, we can use this to create a threshold value. Any feature with less than 0.045 importance can be thrown out, and the remaining features can be kept. In this case, starting with "reanalysis_specific_humidity_g_per_kg" and below can be dropped before runnning a regression.
 
 10. Marked a threshold of 0.045 and less to remove least important features in the futures
 11. Make hierarchical cluster of each remaining variable to spot relationships, and visualize variable importance
