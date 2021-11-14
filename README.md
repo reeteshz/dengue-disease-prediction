@@ -86,6 +86,7 @@ Satellite vegetation - Normalized difference vegetation index (NDVI) - NOAA's CD
 ## Exploratory Data Analysis:
 1. Create a correlation matrix of the new dataframe to observe multicollinearity
 2. Add a heat map of the correlation matrix to see the correlation visually
+![](images/Heatmap.png)
 3. Make a scatter plot matrix to observe trends in the data
 4. Create a histogram matrix to look at the distributions, and note any that might need to be later transformed after running a regression
 5. Create a mask variable that will hide any features that do not have any correlation coefficient with less than 0.90
