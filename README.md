@@ -108,6 +108,7 @@ The random forest model lists the feature importance for each remaining varaible
 The dendrogram above gives a visual on each feature, and depicts clustering relationship based on how related they are to other features. We can view the correlation of the variables and see that variable such as "ndvi" and its directions are all quite correlated with two clusters next to each other. After running a prediction model, only one may need to be kept to best model a case of dengue.
 
 12. Generate second hierarchical cluster to see variable relationships after removing variables that had correlation coefficients with values less than 0.90
+![](images/Dendrogram2.png)
 
 ## Future Plan
 1. Iteratively include latest data into dataset from different sources.
