@@ -94,8 +94,10 @@ Satellite vegetation - Normalized difference vegetation index (NDVI) - NOAA's CD
 7. Create a new dataframe "X_clean" that has the variables with multicollinearity above 0.90 dropped from it
 8. Run sweetviz package to see association chart
 9. Use RandomForestClassifier to see the features that will be most important to keep when running a regression in the next stage
+![](images/Randomforest.png)
 10. Marked a threshold of 0.045 and less to remove least important features in the futures
 11. Make hierarchical cluster of each remaining variable to spot relationships, and visualize variable importance
+![](images/Dendrogram.png)
 12. Generate second hierarchical cluster to see variable relationships after removing variables that had correlation coefficients with values less than 0.90
 
 ## Future Plan
