@@ -111,6 +111,9 @@ The dendrogram above gives a visual on each feature, and depicts clustering rela
 
 ![](images/Dendrogram2.png)
 
+## VIF Scores
+Before running our regression, we imported variance_inflation_factor from statsmodels to calculate VIF scores of the features. This gives us another output value to test for multicollinearity amongst our features. Any features that have VIF scores above 10 can be dropped before running a regression model, as these features have a large amount of influence on another feature and will skew the results.
+
 ## Future Plan
 1. Iteratively include latest data into dataset from different sources.
 2. Planning to add some new feature which can make dataset more reliable. For instance, pollution level, environmental elements, etc.
