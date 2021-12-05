@@ -171,7 +171,34 @@ VIF_X_clean - standardized and removal of features with VIF scores greater than 
 
 The best performing model was again trans_df. This was the best dataframe since features are chosen at random to be used in the modeling. XGBoost is able to incorporate all features within its implementation and use the strongest features to make predictions. The dataframes that had features dropped would not be able to have all features contribute to the learning process. 
 
-In summary, for part one, the best overall model came from using XGBoost as it had the lowest MSE and MAE of (567.39, 13.33) using the trans_df dataframe.
+In summary, for part one, the best overall model came from using XGBoost as it had the lowest MSE and MAE of (567.39, 13.33) using the trans_df dataframe. The XGBoost results were able to significantly improve upon the baseline case predictions set by the Linear Regression values which were around 20 for the MAE.
+
+(Part 2) - Train models on the weather data of San Juan, and then we will test the models on the Iquitos data
+
+Part 2 of this study was done to see how well similar climates could be used to predict the spread of Dengue. If the San Juan weather data could be used to predict Dengue cases in Iquitos effectively, then we could get a clearer idea on how likely Dengue is to spread at locations with similar climates like Singapore and Southern part of the United States. 
+
+Linear Regression:
+Trans_df - solely standardized data (1105.41, 27.37)
+X_clean - standardized and removal of highly correlated features based on the correlation matrix (1164.48, 28.91)
+VIF_X_clean - standardized and removal of features with VIF scores greater than 10 (1278.83, 31.75)
+
+After running the linear regression, we see that we do not beat the baseline prediction of approximately 20 MAE. However, the trans_df MAE is still quite low at 27.37 and is still able to generalize the case predictions well. It is also of note, that the MSE is lower than the average MSE of the original linear regression.
+
+Random Forest:
+Trans_df - solely standardized data (2523.52, 40.00)
+X_clean - standardized and removal of highly correlated features based on the correlation matrix (1826.06, 31.73)
+VIF_X_clean - standardized and removal of features with VIF scores greater than 10 (447.24, 18.96)
+
+This time, after running the Random Forest model, we can beat the baseline prediction score around 20 MAE using the VIF_X_clean dataframe. In this case, removing the high multicollinearity features from the training data helps remove some of the noise for the model when making predictions. 
+
+XGBoost (with tuned hyperparameters):
+Trans_df - solely standardized data (4668.50, 64.61)
+X_clean - standardized and removal of highly correlated features based on the correlation matrix (175.88, 9.20)
+VIF_X_clean - standardized and removal of features with VIF scores greater than 10 (199.90, 10.75)
+
+This model gives the best performance out of any. It has the lowest MSE and MAE values after tuning the hyperparameters. 
+
+In summary, since we can beat the baseline performance of 20 MAE, we can more confidently conclude that Dengue is likely to spread to warm, tropic climates around the globe.
 
 ## Future Plan
 1. Iteratively include latest data into dataset from different sources.
