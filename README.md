@@ -22,10 +22,10 @@ https://obamawhitehouse.archives.gov/blog/2015/06/05/back-future-using-historica
 ## Research Question
 The goal of this project is to see if temperature, humidity, precipitation, and vegetation index help predict the total Dengue cases for each (city, year, and weekofyear) in the test set. The project will be evaluated using both the mean absolute error and mean squared error. There will be predictions for both the cities of San Juan, Puerto Rico and Iquitos, Peru. The study will be completed in two steps. The first of which we will use the weather data belonging to each city to train on and then predict the Dengue count in the test set. The second step of the study we will train our models on the weather data of San Juan, and then we will test the models on the Iquitos data. This will give a comparison as to how similar the climates of each city are and provide a baseline of how areas with similar climates may be susceptible to the spread of Dengue. Our group plans to use several types of analyses to help predict the total cases such as linear regression, random forest, and XGBoost. The linear regression will give us a baseline value to compare the estimated cases when using the more advanced models like random forest.
 ### Exploratory Data Analysis Questions
-- How have average air temperature and total precipitation changed over time?
+- Are air temperature and precipitation affected by seasonal changes?
 - How does total cases correlate with mean dew point temperature?
 - How does humidity level correlate with total cases?
-- Does Vegitation Index has any role in disease spread?
+- Does Vegetation Index play any role in disease spread?
 
 ## Dataset
 The features in this dataset - dengue_features_train.csv:
