@@ -1,5 +1,5 @@
 # Group-16 for DSBA 6162 KDD Project
-## Members - 
+## Members
 - William (Billy) Edwards 
 - Samihan Jawalkar
 - Shubham Shah
@@ -27,7 +27,7 @@ The goal of this project is to see if temperature, humidity, precipitation, and 
 - How does humidity level correlate with total cases?
 - Does Vegetation Index play any role in disease spread?
 
-## Application of the CRISP-DM Process:
+## Application of the CRISP-DM Process
 
 ## Dataset
 The features in this dataset - dengue_features_train.csv:
@@ -76,7 +76,7 @@ Goal/Target Variable:
     
     total_cases – which lists the number of cases each week in the data 
 
-## Data Preparation/Preprocessing:
+## Data Preparation/Preprocessing
 1. Importing train data set into jupyter notebook
 2. Explore the datatypes and statistical information of the csv
 3. Check for percentage of null vales
@@ -89,7 +89,7 @@ Goal/Target Variable:
 10. Put new standardized variables in trans_df dataframe
 11. Plot new bow plot matrix to observe any remaining outliers from the standardized variables
 
-## Exploratory Data Analysis:
+## Exploratory Data Analysis
 1. Create a correlation matrix of the new dataframe to observe multicollinearity
 2. Add a heat map of the correlation matrix to see the correlation visually
 ![](images/Heatmap.png)
@@ -117,7 +117,7 @@ The dendrogram above gives a visual on each feature, and depicts clustering rela
 
 ![](images/Dendrogram2.png)
 
-## EDA Results:
+## EDA Results
 From the scatter plot matrix, we see several variables that are positively correlated with the total case count. These variables are: weekofyear, reanalysis_air_temp_k, reanalysis_avg_temp_k, reanalysis_dew_point_temp_k, reanalysis_min_air_temp_k, station_avg_temp_c, and station_min_temp_c. When holding each other variable equal, these variables will produce a larger amount of dengue cases. It is interesting to note that more total cases occur as it gets later in the year. This coincides with the rainy season in both cities. We can also see that typically as the air temperature, dew point, and humidity increase the more cases that arise. These results are consistent when factoring in the random forest classifier feature importance bar chart. We again see that weekofyear is the most significant feature in predicting Dengue case, with precipitation and vegetation index also showing high importance.
 
 ## VIF Scores
