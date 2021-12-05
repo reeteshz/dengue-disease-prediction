@@ -200,6 +200,9 @@ This model gives the best performance out of any. It has the lowest MSE and MAE 
 
 In summary, since we can beat the baseline performance of 20 MAE, we can more confidently conclude that Dengue is likely to spread to warm, tropic climates around the globe.
 
+## Evaluation
+The two main methods of evaluation for this project were Mean Absolute Error and Mean Squared Error. The MAE provides the average difference observed in the predicted and actual values across the whole test set. It doesn’t matter if the prediction is higher or lower than the actual value, the method just looks at the absolute value. A lower value indicates better accuracy. This is a good evaluation metric to use when outliers are not concerning, although our data set contained many. The MSE was incorporated as an alternative metric that more easily handled outliers to measure performance. This method assigns more weight to bigger error values and takes the average of them. Again, the lower the value the better. When taking both the MAE and MSE values into account we see that the XGBoost model was the most successful at making predictions. This model beat the baseline performance and gave the lowest error values. This is due to the model using all features and weighting the prediction values they make. 
+
 ## Future Plan
 1. Iteratively include latest data into dataset from different sources.
 2. Add some new features which can make the dataset more reliable. For instance, pollution level, environmental elements, etc.
