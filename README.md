@@ -117,6 +117,9 @@ The dendrogram above gives a visual on each feature, and depicts clustering rela
 
 ![](images/Dendrogram2.png)
 
+## EDA Results:
+From the scatter plot matrix, we see several variables that are positively correlated with the total case count. These variables are: weekofyear, reanalysis_air_temp_k, reanalysis_avg_temp_k, reanalysis_dew_point_temp_k, reanalysis_min_air_temp_k, station_avg_temp_c, and station_min_temp_c. When holding each other variable equal, these variables will produce a larger amount of dengue cases. It is interesting to note that more total cases occur as it gets later in the year. This coincides with the rainy season in both cities. We can also see that typically as the air temperature, dew point, and humidity increase the more cases that arise. These results are consistent when factoring in the random forest classifier feature importance bar chart. We again see that weekofyear is the most significant feature in predicting Dengue case, with precipitation and vegetation index also showing high importance.
+
 ## VIF Scores
 Before running our regression, we imported variance_inflation_factor from statsmodels to calculate VIF scores of the features. This gives us another output value to test for multicollinearity amongst our features. Any features that have VIF scores above 10 can be dropped before running a regression model, as these features have a large amount of influence on another feature and will skew the results.
 1. Create trans_df2 by dropping columns in trans_df that had a correlation of 1 from the correlation matrix with another column (columns 3,7,10,15, and 16)
