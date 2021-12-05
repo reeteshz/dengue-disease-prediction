@@ -69,6 +69,10 @@ Satellite vegetation - Normalized difference vegetation index (NDVI) - NOAA's CD
     ndvi_sw – Pixel southwest of city centroid
     ndvi_ne – Pixel northeast of city centroid
     ndvi_nw – Pixel northwest of city centroid
+    
+Goal/Target Variable:
+    
+    total_cases – which lists the number of cases each week in the data 
 
 ## Data Preparation/Preprocessing:
 1. Importing train data set into jupyter notebook
