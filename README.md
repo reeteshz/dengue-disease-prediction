@@ -119,6 +119,29 @@ The dendrogram above gives a visual on each feature, and depicts clustering rela
 
 ## VIF Scores
 Before running our regression, we imported variance_inflation_factor from statsmodels to calculate VIF scores of the features. This gives us another output value to test for multicollinearity amongst our features. Any features that have VIF scores above 10 can be dropped before running a regression model, as these features have a large amount of influence on another feature and will skew the results.
+1. Create trans_df2 by dropping columns in trans_df that had a correlation of 1 from the correlation matrix with another column (columns 3,7,10,15, and 16)
+2. Import variance_inflation_factor from statsmodels to calculate remaining VIF scores on the columns
+3. Drop any column with VIF greater than 10
+4. Create VIF_X_clean dataset after dropping high VIF columns
+
+## Machine Learning Process
+1. Create train/test split variables from the trans_df, X_clean, and VIF_X_clean datasets to use them in modeling
+2. (For Part 1) - Use the weather data belonging to each city to train on and then predict the Dengue count in the test set
+3. Import LinearRegression, mean_squared_error, and mean_absolute_error from sklearn
+4. Run LinearRegression on each of the datasets and view error outputs
+5. Import RandomForestRegressor from sklearn
+6. Run RandomForestRegressor on each of the datasets and view error outputs
+7. Import XGBoost as xgb
+8. Run XGBoost on each of the datasets and view error outputs
+9. (For Part 2) - Train models on the weather data of San Juan, and then we will test the models on the Iquitos data
+10. View value counts of the two cities in trans_df dataframe
+11. Create new SJ and IQ train and test data splits for the trans_df, X_clean, and VIF_X_clean datasets
+12. Re-run LinearRegression on each of the new datasets and view error outputs
+13. Re-run RandomForestRegressor on each of the new datasets and view error outputs
+14. Re-run XGBoost on each of the new datasets and view error outputs
+15. Tune hyperparameters for XGBoost by running defined function
+16. List out the tuned hyperparameters
+17. Re-run tuned XGBoost on each of the new datasets and view error outputs
 
 ## Future Plan
 1. Iteratively include latest data into dataset from different sources.
