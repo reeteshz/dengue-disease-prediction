@@ -145,6 +145,6 @@ Before running our regression, we imported variance_inflation_factor from statsm
 
 ## Future Plan
 1. Iteratively include latest data into dataset from different sources.
-2. Planning to add some new feature which can make dataset more reliable. For instance, pollution level, environmental elements, etc.
+2. Add some new features which can make the dataset more reliable. For instance, pollution level, environmental elements, etc.
 3. Expand the study further to compare the spread of predicted total cases in the United States.  
-4. Extract and consolidate vegetation indices for areas in Singapore.
+4. Extract and consolidate vegetation indices for areas in Singapore to include in new predictions.
