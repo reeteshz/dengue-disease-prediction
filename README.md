@@ -124,7 +124,7 @@ Before running our regression, we imported variance_inflation_factor from statsm
 3. Drop any column with VIF greater than 10
 4. Create VIF_X_clean dataset after dropping high VIF columns
 
-## Machine Learning Process
+## Modeling Process
 1. Create train/test split variables from the trans_df, X_clean, and VIF_X_clean datasets to use them in modeling
 2. (For Part 1) - Use the weather data belonging to each city to train on and then predict the Dengue count in the test set
 3. Import LinearRegression, mean_squared_error, and mean_absolute_error from sklearn
