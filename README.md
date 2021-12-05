@@ -143,6 +143,36 @@ Before running our regression, we imported variance_inflation_factor from statsm
 16. List out the tuned hyperparameters
 17. Re-run tuned XGBoost on each of the new datasets and view error outputs
 
+## Machine Learning
+After the data pre-processing and EDA phases, we implemented supervised learning algorithms to make the predictions for the total_cases of Dengue in each city. Modeling techniques such as Linear Regression, Random Forest, and XGBoost were implemented. These techniques were applied to three dataframes: trans_df, X_clean, and VIF_X_clean. 
+
+The three dataframes differ in that trans_df consisted of all original features after those with extreme outliers had been standardized. X_clean contained the same features as trans_df, but several were removed that contained correlations greater than 90% with other features based on the correlation matrix. Lastly, VIF_X_clean had the same features as trans_df, but those with VIF scores greater than 10 were dropped from it. Each of the dataframes were used in modeling to see which dataframe would generalize the predictions the best to the test set. 
+
+(Part 1) - Use the weather data belonging to each city to train on and then predict the Dengue count in the test set
+
+Linear Regression was first applied to the three dataframes to set a baseline value for Dengue case predictions. This model is used for finding a linear relationship between the target and one or more predictors. The outcomes for the models for MSE and MAE are as follows:
+Trans_df - solely standardized data (1456.89, 21.19)
+X_clean - standardized and removal of highly correlated features based on the correlation matrix (1658.74, 20.94)
+VIF_X_clean - standardized and removal of features with VIF scores greater than 10 (1418.00, 19.98)
+
+As we would expect here, the VIF_X_clean dataframe was the best performing linear regression model, as it had all the features with high multicollinearity dropped from it. 
+
+Next, we tried using the ensemble method Random Forest on the three dataframes to see if we could improve our prediction errors. This model can perform both regression and classification tasks with the use of multiple decision trees that make up the Random Forest. The outcomes for the models for MSE and MAE are as follows:
+Trans_df - solely standardized data (830.31, 14.80)
+X_clean - standardized and removal of highly correlated features based on the correlation matrix (1151.94, 15.68)
+VIF_X_clean - standardized and removal of features with VIF scores greater than 10 (850.64, 15.85)
+
+The best performing dataframe for this model was trans_df. This is most likely due to Random Forest models being able to easily handle outliers and features with multicollinearity, since it is made up of Decision Trees. The further reduction of previous features in the other dataframes was unnecessary. 
+
+Lastly, we tried using the XGBoost method on the three dataframes to see if we could improve our prediction errors. Boosting is an ensemble learning method that combines a set of weak learners (models) into a strong learner (model) to minimize training errors. To perform boosting, a random sample of data is chosen, fitted with a model, and then trained sequentially. This means each model tries to compensate for the weaknesses of the previous one. They compensate for the weaknesses by increasing the weights they place on misclassified data. The outcomes for the models for MSE and MAE are as follows:
+Trans_df - solely standardized data (567.39, 13.33)
+X_clean - standardized and removal of highly correlated features based on the correlation matrix (794.31, 14.09)
+VIF_X_clean - standardized and removal of features with VIF scores greater than 10 (683.91, 14.98)
+
+The best performing model was again trans_df. This was the best dataframe since features are chosen at random to be used in the modeling. XGBoost is able to incorporate all features within its implementation and use the strongest features to make predictions. The dataframes that had features dropped would not be able to have all features contribute to the learning process. 
+
+In summary, for part one, the best overall model came from using XGBoost as it had the lowest MSE and MAE of (567.39, 13.33) using the trans_df dataframe.
+
 ## Future Plan
 1. Iteratively include latest data into dataset from different sources.
 2. Add some new features which can make the dataset more reliable. For instance, pollution level, environmental elements, etc.
