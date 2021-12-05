@@ -208,3 +208,6 @@ The two main methods of evaluation for this project were Mean Absolute Error and
 2. Add some new features which can make the dataset more reliable. For instance, pollution level, environmental elements, etc.
 3. Expand the study further to compare the spread of predicted total cases in the United States.  
 4. Extract and consolidate vegetation indices for areas in Singapore to include in new predictions.
+
+## Instructions to Use
+To use this code for further work you can download the Dengue_KDD file and run it in Google Colab or other python friendly environments. You may follow our groups' steps in generating our results by following the numbered steps listed out above - they are listed in detail with headers for each part of the CRISP-DM process. 
