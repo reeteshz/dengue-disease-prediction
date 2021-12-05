@@ -27,6 +27,8 @@ The goal of this project is to see if temperature, humidity, precipitation, and 
 - How does humidity level correlate with total cases?
 - Does Vegetation Index play any role in disease spread?
 
+## Application of the CRISP-DM Process:
+
 ## Dataset
 The features in this dataset - dengue_features_train.csv:
 
